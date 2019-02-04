@@ -1,0 +1,8 @@
+El desafio sera hacer un atardecer.
+
+- Se vera la playa, el mar y hasta el fondo el sol, que sale en la mañana y se oculta al ATARDECER.
+
+El sol, saldra hasta el fondo despues del mar, saldra opaco en la mañana y llegara hasta arriba brillando, despues empezara a ocultarse
+El mar, tendra olas que se moveran cuando este de dia
+La palmera se oscurecera cuando se oculte el sol.
+

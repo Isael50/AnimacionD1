@@ -1,0 +1,438 @@
+body {
+	background: black;
+  }
+
+.sky {
+	width: 100%;
+	height: 800px;
+	background: #87CEEB;
+	overflow: hidden;
+	position: relative;
+	animation-name: sunset;
+	animation-duration: 55s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes sunset {
+	/* 0% */
+	from {
+		background: #2e4d8b;
+	}
+	50% {
+		background: #87CEEB;
+	}
+	85% {
+		background: #5bc8f3;
+	}	
+	/* 100% */
+	to {
+		background: #20bcfa;
+	}
+}
+
+.sun {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: #FDB813;
+	top: 300px;
+	position: absolute;
+	z-index: 1;
+	animation-name: salir;
+	animation-duration: 55s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+@keyframes salir {
+	/* 0% */
+	from {
+		top: 450px;
+		left: 500px;
+	}
+	15% {
+		background: #fcfdfb;
+		box-shadow: 0px 0px 5px 3px rgb(252, 227, 0);
+	}
+	21% {
+		background: #ececc1;
+		box-shadow: 0px 0px 40px 9px rgb(252, 227, 0);
+	}
+	25% {
+		background: #fffb2a;
+		box-shadow: 0px 0px 20px 4px rgb(233, 226, 168);
+	}
+	85% {
+		background: rgb(255, 251, 20);
+		box-shadow: 0px 0px 70px 5px rgb(255, 238, 1);
+	}
+	/* 100% */
+	to {
+		top: 10px;
+		left: 10px;
+		background:#fffb14;
+		box-shadow: 0px 0px 95px 15px rgb(252, 227, 0);
+	}
+}
+
+.cloud1 {
+	animation-name: salirCloud1;
+	animation-duration: 75s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes salirCloud1 {
+	from {
+		left: -120px;
+		}
+	to {
+		left: 1100px;
+	}
+}
+.cloud2 {
+	animation-name: salirCloud2;
+	animation-duration: 55s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes salirCloud2 {
+	from {
+		left: 100px;
+		}
+	to {
+		left: 1100px;
+	}
+}
+.cloud3 {
+	animation-name: salirCloud3;
+	animation-duration: 35s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes salirCloud3 {
+	from {
+		left: 350px;
+		}
+	to {
+		left: 1100px;
+	}
+}
+.cloud4 {
+	animation-name: salirCloud4;
+	animation-duration: 20s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes salirCloud4 {
+	from {
+		left: 500px;
+		}
+	to {
+		left: 1100px;
+	}
+}
+.cloud5 {
+	animation-name: salirCloud5;
+	animation-duration: 15s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes salirCloud5 {
+	from {
+		left: 700px;
+		}
+	to {
+		left: 1100px;
+	}
+}
+
+.cloud1 {
+	top: 150px;
+	left: 100px;
+	position: absolute;
+	background: #FDB813;
+}
+.cloud2 {
+	top: 20px;
+	left: 300px;
+	position: absolute;
+}
+.cloud3 {
+	top: 250px;
+	left: 600px;
+	position: absolute;
+}
+.cloud4 {
+	top: 80px;
+	left: 700px;
+	position: absolute;
+}
+.cloud5 {
+	top: 360px;
+	left: 750px;
+	position: absolute;
+	perspective: 200px;
+}
+
+.c1 {
+	width: 70px;
+	height: 70px;
+	border-radius: 35%;
+	transform: rotate(145deg) skew(35deg) translate(55px) scale(1.5);
+	background: #ffffff;
+	left: 40px;
+	position: absolute;
+	z-index: 3;
+}
+.c2 {
+	width: 50px;
+	height: 50px;
+	border-radius: 35%;
+	left: -15px;
+	transform: rotate(55deg) skew(5deg) translate(25px) scale(2);
+	background: #ffffff;
+	position: absolute;
+}
+.c3 {
+	width: 40px;
+	height: 55px;
+	top: -10px;
+	border-radius: 35%;
+	transform: rotate(125deg) skew(35deg) translate(55px) scale(2);
+	background: #ffffff;
+	position: absolute;
+}
+.cloud5 {
+	animation-name: salirCloud5;
+	animation-duration: 15s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes salirCloud5 {
+	from {
+		left: 650px;
+		}
+	to {
+		left: 1100px;
+	}
+}
+
+.sea {
+	width: 100%;
+	height: 400px;
+	background: #5696d3;
+	position: absolute;
+	top: 400px;
+	z-index: 2;
+	animation-name: sunsetSea;
+	animation-duration: 55s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+@keyframes sunsetSea {
+	/* 0% */
+	from {
+		background: #022341;
+	}
+	50% {
+		background: #093f72;
+	}
+	85% {
+		background: #1a63a8;
+	}
+	/* 100% */
+	to {
+		background: #5696d3;
+	}
+}	
+
+.Barco {
+	position: relative;
+	top: 150px;
+	height: 100px;
+	animation-name: barcoNav;
+	animation-duration: 7s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes barcoNav {
+	from {
+		top: 250px;
+		left: -100px;
+	}
+	70%{
+		top: 250px;
+		left: 470px;
+		transform: scale(1);
+	}
+	80% {
+		top: 100px;
+		left: 490px;
+	}
+	to {
+		top: 100px;
+		left: 600px;
+		transform: scale(.3);
+	}
+}
+
+.barcoP1 {
+	border-style: solid;
+	border-color: transparent transparent red transparent;
+	border-width: 0 30px 30px 30px;
+	height: 0;
+	width: 80px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	margin: 20px 0 50px 0;
+	transform: rotate(180deg);
+	z-index: 2;
+}
+
+.barcoP2 {
+	border-style: solid;
+	border-color: transparent transparent blue transparent;
+	border-width: 0 60px 60px 60px;
+	height: 0;
+	width: 80px;
+	position: absolute;
+	margin: 20px 0 50px 0;
+	transform: rotate(180deg);
+	z-index: 1;
+}
+
+.barcoP3 {
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+	border-width: 0 30px 30px 30px;
+	height: 0;
+	width: 85px;
+	position: absolute;
+	top: 17px;
+	left: 28px;
+	margin: 20px 0 50px 0;
+	transform: rotate(180deg);
+	z-index: 3;
+}
+
+.barcoP4 {
+	border-style: solid;
+	border-color: white white white white;
+	height: 120px;
+	border-radius: 25%;
+	width: 5px;
+	position: absolute;
+	top: -100px;
+	left: 95px;
+	margin: 20px 0 50px 0;
+	transform: rotate(180deg);
+	z-index: 0;
+}
+
+.barcoP5 {
+	border-style: solid;
+	border-color: transparent transparent #1eff00 transparent;
+	border-width: 0px 70px 95px 70px;
+	margin: 10px 0px 10px 0px;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: -90px;
+	left: 31px;
+	z-index: 7;
+}
+
+.Playa {
+	position: relative;
+}
+.playa1 {
+	width: 150px;
+	height: 90px;
+	border-radius: 30%;
+	background: #a69581;
+	transform: skew(-15deg);
+	position: absolute;
+	top: 170px;
+	left: 700px;
+	z-index: 3;
+}
+.playa2 {
+	width: 130px;
+	height: 70px;
+	border-radius: 30%;
+	background: #e7b171;
+	transform: skew(-15deg);
+	position: absolute;
+	top: 180px;
+	left: 710px;
+	z-index: 4;
+}
+.playa2 img {
+	width: 70px;
+	height: 68px;
+	position: absolute;
+	top: 1px;
+	left: 25px;
+}
+
+.sombra {
+	width: 35px;
+	height: 8px;
+	background: #292929;
+	position: absolute;
+	top: 40px;
+	left: 72px;
+	z-index: 5;
+	transform: skewY(-35deg);
+	opacity: 0;
+	animation-name: sombra;
+	animation-duration: 55s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+
+@keyframes sombra {
+	/* 0% */
+	from {
+		}
+	10% {
+		opacity: 0;
+	}
+	/* 100% */
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+/* https://html-css-js.com/css/generator/background/ */
+
+/* https://www.youtube.com/watch?v=IP3OmWpUuIg */
